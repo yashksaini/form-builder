@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: var(--black);
+}
+:root {
+  --black: #1f1f1f;
+  --white: #fff;
+  --background: #f0f0f0;
+  --primary: #5c67ff;
+  /* --primary: #0eaa50; */
+  --line: #cfcfcf;
+  --grey: #808080;
+}
+body {
+  background-color: var(--background);
+}
+.container {
+  width: min(44rem, 100%);
+  margin: auto;
+  padding: 1rem;
+}
+.card {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 1.2rem 1.5rem;
+  border-top: 0.2rem solid var(--primary);
+  margin-bottom: 1rem;
+}
+.card h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+.card h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.card p {
+  font-size: 1rem;
+  color: var(--grey);
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+.inputData {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+.inputData input {
+  width: calc(100% - 10rem);
+  height: 3rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 0.06rem solid var(--line);
+}
+
+.inputData input:focus {
+  outline: none;
+  border-bottom: 0.06rem solid var(--primary);
+}
+.inputData select {
+  background-color: var(--white);
+  font-weight: 500;
+  width: 9rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 0.06rem solid var(--line);
+}
+.inputData select:hover {
+  cursor: pointer;
+}
+.inputData select:focus {
+  outline: none;
+  border-bottom: 0.06rem solid var(--primary);
+}
+.textInput {
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 0.06rem dashed var(--line);
+  margin-bottom: 1rem;
+}
+.textInput:focus {
+  outline: none;
+  border-bottom: 0.06rem solid var(--primary);
+}
+.addField {
+  width: 6rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  color: var(--white);
+  border: none;
+  background-color: var(--primary);
+  margin-bottom: 1rem;
+}
+.addField:hover {
+  cursor: pointer;
+}
+.cardFooter {
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.close {
+  color: var(--grey);
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.close:hover {
+  cursor: pointer;
+  background-color: var(--background);
+}
+.optionInput {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.optionInput input[type="radio"],
+.optionInput input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+}
+.card input[type="radio"],
+.card input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+}
+.addInput {
+  width: calc(100% - 4rem);
+  height: 2rem;
+  border: none;
+  border-bottom: 0.06rem solid var(--line);
+}
+.addInput:focus {
+  outline: none;
+  border-bottom: 0.06rem solid var(--primary);
+}
+.optionInput span {
+  color: var(--grey);
+  font-size: 1.25rem;
+}
+.optionInput span:hover {
+  cursor: pointer;
+}
+.addOption {
+  width: 6rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  color: var(--black);
+  border: none;
+  background-color: var(--background);
+}
+.addOption:hover {
+  cursor: pointer;
+}
+.list {
+  width: 1rem;
+  height: 1rem;
+  font-size: 1rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eachInput {
+  min-height: 2.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.eachInput label {
+  padding-left: 1rem;
+}
+.eachInput label:hover {
+  cursor: pointer;
+}
+.select {
+  width: min(25rem, 100%);
+  padding: 1rem;
+  border: none;
+  border-bottom: 0.06rem solid var(--line);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.select:hover {
+  cursor: pointer;
+}
+.select:focus {
+  outline: none;
+  border-bottom: 0.06rem solid var(--primary);
+}
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 2.25rem;
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+.preview span {
+  color: var(--white);
+  margin-right: 0.5rem;
+}
+.filledValue {
+  margin: 1rem 0;
+}
+.clear {
+  width: 6rem;
+  height: 2rem;
+  background-color: var(--background);
+  border: 0.06rem solid var(--line);
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+.clear:hover {
+  cursor: pointer;
+}
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 2.25rem;
+}
+@media only screen and (max-width: 44rem) {
+  .inputData {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .inputData input {
+    width: 100%;
+  }
+  .inputData select {
+    width: 100%;
+    padding: 0;
+    color: var(--grey);
+    margin-bottom: 1.2rem;
+    border-bottom: 0.06rem solid var(--line);
+  }
+}

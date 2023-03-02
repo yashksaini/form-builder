@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preview | Form Builder | 2023</title>
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="./icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="topBar">
+          <h1>Form Preview</h1>
+          <a href="index.html" class="preview"
+            ><span class="material-symbols-outlined"> edit_note </span> Edit</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <p>Edit the form and preview again.</p>
+      </div>
+      <form class="allQuestion" id="preview" autocomplete="off"></form>
+      <div class="card">
+        <h1>Submitted Data</h1>
+        <p>Submitted form data appear below</p>
+        <button onclick="clearData()" class="clear">Clear Form</button>
+        <div id="submitedData"></div>
+      </div>
+    </div>
+    <script src="preview.js"></script>
+  </body>
+</html>
+<!-- 
+        onsubmit="submitForm()" -->
